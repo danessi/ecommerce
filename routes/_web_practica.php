@@ -38,10 +38,10 @@ return $prod; */
     //return $prod;
 
     /* obtenemos categorias y productos a partir de categorias (la forma inversa) forma facil de listar productos por categoria  */
-   /*  $cat = Category::find(1)->products; */ /* obtenemos la info de la categoria del producto */
-    /* return $cat; */
+    $cat = Category::find(1)->products; /* obtenemos la info de la categoria del producto */
+    return $cat;
 
-    return view('tienda.index');
+
 });
 
 Auth::routes();
