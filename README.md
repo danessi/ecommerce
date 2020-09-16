@@ -1,3 +1,10 @@
+ECOMMERCE 2.0 CON LARAVEL Y VUE
+*******************************
+
+SE TRATA DE UNA TIENDA ONLINE CON CATEGORIAS Y PRODUCTOS
+
+SE ESTA DESARROLLANDO LA FUNCIONALIDAD DE ECOMMERCE PARA TRABAJAR CON PAYPAL Y OTRAS FORMAS DE PAGO
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
