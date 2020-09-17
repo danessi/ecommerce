@@ -4,10 +4,14 @@
 <title>@yield('titulo')</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Jhonatan Shop template">
+<meta name="description" content="Ecommerce template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    <!-- CSRF Token -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="{{ asset('asset/styles/bootstrap-4.1.2/bootstrap.min.css') }}">
 
@@ -32,7 +36,7 @@
 	<div class="menu_search">
 		<form action="#" id="menu_search_form" class="menu_search_form">
 			<input type="text" class="search_input" placeholder="Search Item" required="required">
-			<button class="menu_search_button"><img src="http://127.0.0.1:8006/asset/images/search.png" alt=""></button>
+			<button class="menu_search_button"><img src="http://127.0.0.1:8000/asset/images/search.png" alt=""></button>
 		</form>
 	</div>
 	<!-- Navigation -->
@@ -47,7 +51,7 @@
 	<!-- Contact Info -->
 	<div class="menu_contact">
 		<div class="menu_phone d-flex flex-row align-items-center justify-content-start">
-			<div><div><img src="http://127.0.0.1:8006/asset/images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
+			<div><div><img src="http://127.0.0.1:8000/asset/images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
 			<div>+1 912-252-7350</div>
 		</div>
 		<div class="menu_social">
@@ -71,8 +75,8 @@
 			<div class="logo">
 				<a href="#">
 					<div class="d-flex flex-row align-items-center justify-content-start">
-						<div><img src="http://127.0.0.1:8006/asset/images/logo_1.png" alt=""></div>
-						<div>Jhonatan Shop</div>
+						<div><img src="http://127.0.0.1:8000/asset/images/logo_1.png" alt=""></div>
+						<div>Ecommerce</div>
 					</div>
 				</a>	
 			</div>
@@ -89,15 +93,15 @@
 				<div class="header_search">
 					<form action="#" id="header_search_form">
 						<input type="text" class="search_input" placeholder="Search Item" required="required">
-						<button class="header_search_button"><img src="http://127.0.0.1:8006/asset/images/search.png" alt=""></button>
+						<button class="header_search_button"><img src="http://127.0.0.1:8000/asset/images/search.png" alt=""></button>
 					</form>
 				</div>
 				
 				<!-- Cart -->
-				<div class="cart"><a href="cart.html"><div><img class="svg" src="http://127.0.0.1:8006/asset/images/cart.svg" alt="https://www.flaticon.com/authors/freepik"><div>1</div></div></a></div>
+				<div class="cart"><a href="cart.html"><div><img class="svg" src="http://127.0.0.1:8000/asset/images/cart.svg" alt="https://www.flaticon.com/authors/freepik"><div>1</div></div></a></div>
 				<!-- Phone -->
 				<div class="header_phone d-flex flex-row align-items-center justify-content-start">
-					<div><div><img src="http://127.0.0.1:8006/asset/images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
+					<div><div><img src="http://127.0.0.1:8000/asset/images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
 					<div>+1 912-252-7350</div>
 				</div>
 			</div>
@@ -118,8 +122,8 @@
 								<div class="footer_logo">
 									<a href="#">
 										<div class="d-flex flex-row align-items-center justify-content-start">
-											<div class="footer_logo_icon"><img src="http://127.0.0.1:8006/asset/images/logo_2.png" alt=""></div>
-											<div>Jhonatan Shop</div>
+											<div class="footer_logo_icon"><img src="http://127.0.0.1:8000/asset/images/logo_2.png" alt=""></div>
+											<div>Ecommerce</div>
 										</div>
 									</a>		
 								</div>
@@ -205,6 +209,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 
 <script src="{{ asset('asset/js/jquery-3.2.1.min.js') }}"></script>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
 <script src="{{ asset('asset/styles/bootstrap-4.1.2/popper.js') }}"></script>
 <script src="{{ asset('asset/styles/bootstrap-4.1.2/bootstrap.min.js') }}"></script>
 <script src="{{ asset('asset/plugins/greensock/TweenMax.min.js') }}"></script>
