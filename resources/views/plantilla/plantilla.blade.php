@@ -20,9 +20,8 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('asset/plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}">
 
 
+@yield('estilos')
 
-<link rel="stylesheet" type="text/css" href="{{ asset('asset/styles/main_styles.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('asset/styles/responsive.css') }}">
 
 
 </head>
